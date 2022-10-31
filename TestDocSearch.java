@@ -10,8 +10,8 @@ public class TestDocSearch {
 	@Test 
 	public void testIndex() throws URISyntaxException, IOException {
     Handler h = new Handler("./technical/");
-    URI rootPath = new URI("http://localhost/");
-    assertEquals("There are 10 total files to search.", h.handleRequest(rootPath));
+    URI rootPath = new URI("http://localhost:8080/");
+    assertEquals("There are 1391 total files to search.", h.handleRequest(rootPath));
 	}
 	@Test 
 	public void testSearch() throws URISyntaxException, IOException {

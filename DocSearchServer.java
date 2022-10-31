@@ -47,6 +47,9 @@ class Handler implements URLHandler {
                    if(FileHelpers.readFile(f).contains(parameters[1])) {
                        foundPaths.add(f.toString());
                    }
+                // if(f.getPath().contains(parameters[1])) {
+                //     foundPaths.add(f.toString());
+                // }
                }
                Collections.sort(foundPaths);
                result = String.join("\n", foundPaths);
